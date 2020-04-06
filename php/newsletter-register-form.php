@@ -7,20 +7,57 @@
  */
 function ajouterEmail($email)
 {
+    if (verifieEmail($email)) {
+        $sPDO = SingletonPDO::getInstance();
+
+
+        $oPDOStatement = $sPDO->prepare(
+            'INSERT INTO email SET email=:email;'
+        );
+
+        $oPDOStatement->bindParam(':email', $email);
+        $oPDOStatement->execute();
+        if ($oPDOStatement->rowCount() == 0) : ?>
+            <p class="failed">Oups, une erreur est survenue.</p>
+        <?php
+            return false;
+        endif; ?>
+
+        <p class="succes">Succés !</p>
+        <?php return true;
+    }
+}
+
+/**
+ * verifie si l'email donné est déjà présent dans la table email
+ *
+ * @return void
+ */
+function verifieEmail($email)
+{
     $sPDO = SingletonPDO::getInstance();
     $oPDOStatement = $sPDO->prepare(
-        'INSERT INTO email SET email=:email;'
+        'SELECT * FROM email;'
     );
 
-    $oPDOStatement->bindParam(':email', $email);
     $oPDOStatement->execute();
+
     if ($oPDOStatement->rowCount() == 0) {
         return false;
     }
+
+    $emails = $oPDOStatement->fetchAll(PDO::FETCH_ASSOC);
+
+    foreach ($emails as $emailEnregistré) {
+        if ($email == $emailEnregistré["email"]) {
+            return false;
+        }
+    }
+
     return true;
 }
 
-$email = $_POST["email"];
+$email = isset($_POST["email"]) ? $_POST["email"] : null;
 $to    = "sacha.pignot@gmail.com"; // ENTER YOUR EMAIL ADDRESS
 
 if (isset($email)) :
@@ -33,11 +70,5 @@ if (isset($email)) :
     mail($to, $email_subject, $msg, $headers);
 
     // Enregistrer l'email dans la BDD
-    $ajoutEmail = ajouterEmail($email);
-
-    if ($ajoutEmail) : ?>
-        <p class="succes" >Succès !</p>
-    <?php else : ?>
-        <p class="failed" >Oups, réessayez.</p>
-<? endif;
+    ajouterEmail($email);
 endif;

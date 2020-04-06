@@ -4310,12 +4310,17 @@ a.share-ico.ico-google-plus { background-color: #cd1111; color: #fff; }
   padding: 0 10%;
 }
 
+.succes, .failed {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 .succes {
-  color: green;
+  color: green !important;
 }
 
 .failed {
-  color: red;
+  color: red !important;
 }
 
 .bg-deepviolet .newsletter-txt p { 
