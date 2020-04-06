@@ -225,7 +225,7 @@
 				<!-- SECTION TITLE -->
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1 section-title">
-						<h3 class="h3-lg">Tenez-vous informé sur l'évolution de l'application !</h3>
+						<h3 class="h3-lg">Tenez-vous informé sur le lancement de l'application !</h3>
 					</div>
 				</div>
 
@@ -243,9 +243,6 @@
 										<button type="submit" class="btn btn-blue black-hover">S'enregistrer</button>
 									</span>
 								</div>
-
-								<!-- Small Text -->
-								<p class="p-sm">Nous ne partageons vos données personnelles avec personne sauf si la lois l'exige.</p>
 
 								<!-- Newsletter Form Notification and Logic -->
 								<?php require_once("php/newsletter-register-form.php"); ?>
