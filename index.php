@@ -235,7 +235,7 @@
 				<div class="row">
 					<div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
 						<div class="newsletter-txt text-center">
-							<form class="newsletter-form" method="POST" action="">
+							<form class="newsletter-form" method="POST" action="index.php#newsletter-2">
 
 								<div class="input-group">
 									<input type="email" class="form-control" name="email" placeholder="Votre adresse email" required id="s-email">

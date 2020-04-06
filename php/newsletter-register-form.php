@@ -23,7 +23,7 @@ function ajouterEmail($email)
             return false;
         endif; ?>
 
-        <p class="succes">Succés !</p>
+        <p class="succes">Succès !</p>
         <?php return true;
     }
 }
@@ -49,9 +49,10 @@ function verifieEmail($email)
     $emails = $oPDOStatement->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($emails as $emailEnregistré) {
-        if ($email == $emailEnregistré["email"]) {
-            return false;
-        }
+        if ($email == $emailEnregistré["email"]) : ?>
+                <p class="succes">Adresse déjà enregistrée :)</p>
+<?php            return false;
+        endif;
     }
 
     return true;
