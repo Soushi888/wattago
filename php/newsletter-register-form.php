@@ -24,7 +24,9 @@ function ajouterEmail($email)
         endif; ?>
 
         <p class="succes">Succès !</p>
-        <?php return true;
+    <?php return true;
+    } else {
+        return false;
     }
 }
 
@@ -36,22 +38,22 @@ function ajouterEmail($email)
 function verifieEmail($email)
 {
     $sPDO = SingletonPDO::getInstance();
+
+
     $oPDOStatement = $sPDO->prepare(
-        'SELECT * FROM email;'
+        'SELECT email FROM email;'
     );
 
-    $oPDOStatement->execute();
 
-    if ($oPDOStatement->rowCount() == 0) {
-        return false;
-    }
+
+    $oPDOStatement->execute();
 
     $emails = $oPDOStatement->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($emails as $emailEnregistré) {
         if ($email == $emailEnregistré["email"]) : ?>
-                <p class="succes">Adresse déjà enregistrée :)</p>
-<?php            return false;
+            <p class="succes">Adresse déjà enregistrée :)</p>
+<?php return false;
         endif;
     }
 
