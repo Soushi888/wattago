@@ -5,9 +5,9 @@ class SingletonPDO extends PDO
     private static $instance = null;    // pointeur vers l'objet SingletonPDO instancié dans getInstance()
   
     const DEFAULT_SQL_HOST = 'localhost';
-    const DEFAULT_SQL_DBN  = 'sachicxu_watt_landing_page';
-    const DEFAULT_SQL_USER = 'sachicxu_watt_landing_page';
-    const DEFAULT_SQL_PASS = '7#}+F*1uM]1w';
+    const DEFAULT_SQL_DBN  = 'watt_landing_page';
+    const DEFAULT_SQL_USER = 'spignot';
+    const DEFAULT_SQL_PASS = '%&e1nO&ox@G,';
     
     /**
      * Méthode privée accessible uniquement par getInstance() 
