@@ -61,7 +61,7 @@ function verifieEmail($email)
 }
 
 $email = isset($_POST["email"]) ? $_POST["email"] : null;
-$to    = "sacha.pignot@gmail.com"; // ENTER YOUR EMAIL ADDRESS
+$to    = "info@wattago.com"; // ENTER YOUR EMAIL ADDRESS
 
 if (isset($email)) :
     // Envoyer un email
