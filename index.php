@@ -13,7 +13,7 @@
 
 
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
 	<meta name="author" content="DSAThemes" />
 	<meta name="description" content="Wattago &ndash; La première application qui fournit les vraies solutions" />
 	<meta name="keywords" content="Responsive, HTML5 template, DSAThemes, Mobile, Application, One Page, Landing, Mobile App">
@@ -264,55 +264,15 @@
 
 	<!-- EXTERNAL SCRIPTS
 		============================================= -->
-	<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
-	<!-- <script src="js/bootstrap.min.js"></script> -->
-	<!-- <script src="js/fontawesome.min.js"></script> -->
-	<!-- <script src="js/modernizr.custom.js"></script> -->
-	<!-- <script src="js/jquery.easing.js"></script> -->
-	<!-- <script src="js/retina.js"></script> -->
-	<!-- <script src="js/jquery.appear.js"></script> -->
-	<!-- <script src="js/jquery.stellar.min.js"></script> -->
-	<!-- <script src="js/jquery.scrollto.js"></script> -->
-	<!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
-	<!-- <script src="js/isotope.pkgd.min.js"></script> -->
-	<!-- <script src="js/slick.min.js"></script> -->
-	<!-- <script src="js/owl.carousel.min.js"></script> -->
-	<!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
-	<!-- <script src="js/contact-form.js"></script> -->
-	<!-- <script src="js/quick-form.js"></script> -->
-	<!-- <script src="js/comment-form.js"></script> -->
-	<!-- <script src="js/jquery.validate.min.js"></script> -->
-	<!-- <script src="js/jquery.ajaxchimp.min.js"></script> -->
-	<!-- <script src="js/wow.js"></script> -->
-	<script src="js/countdown.js"></script>
 
-	<!-- Custom Script -->
-	<!-- <script src="js/custom.js"></script> -->
+	<span id="siteseal">
+		<script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=LCW6muStuc5wEE50sS27i0xCYACO14LVonWVdLFH3iWRH0K15KUGJvJ46e24"></script>
+	</span>
+	<script src="js/countdown.js"></script>
 
 	<script>
 		// new WOW().init();
 	</script>
-
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-	<!-- [if lt IE 9]>
-			<script src="js/html5shiv.js" type="text/javascript"></script>
-			<script src="js/respond.min.js" type="text/javascript"></script>
-		<![endif] -->
-
-	<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
-	<!--
-		<script>
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-XXXXX-X']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-		-->
 
 
 </body>
