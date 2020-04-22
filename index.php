@@ -231,7 +231,7 @@
 										<div class="wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
 
 											<div class="pricing-plan mb-10">
-												<h5 class="h5-lg">Vous êtes un client ?</h5>
+												<h5 class="client-fournisseur h5-lg">Vous êtes un client ?</h5>
 											</div>
 
 											<div class="client-fournisseur">
@@ -249,7 +249,7 @@
 										<div class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
 
 											<div class="pricing-plan mb-10">
-												<h5 class="h5-lg">Vous êtes un fournisseur</h5>
+												<h5 class="client-fournisseur h5-lg">Vous êtes un fournisseur</h5>
 											</div>
 
 											<div class="client-fournisseur">
