@@ -8,3 +8,10 @@ CREATE TABLE email (
   email  varchar(255)      NOT NULL,
   PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+ALTER TABLE email
+ADD type varchar(255);
+
+UPDATE email
+  SET type = "fournisseur"

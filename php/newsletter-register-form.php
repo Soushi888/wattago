@@ -5,17 +5,18 @@
  *
  * @return boolean
  */
-function ajouterEmail($email)
+function ajouterEmail($email, $type)
 {
     if (verifieEmail($email)) {
         $sPDO = SingletonPDO::getInstance();
 
 
         $oPDOStatement = $sPDO->prepare(
-            'INSERT INTO email SET email=:email;'
+            'INSERT INTO email SET email=:email, type=:type;'
         );
 
         $oPDOStatement->bindParam(':email', $email);
+        $oPDOStatement->bindParam(':type', $type);
         $oPDOStatement->execute();
         if ($oPDOStatement->rowCount() == 0) : ?>
             <p class="failed">Oups, une erreur est survenue.</p>
@@ -61,17 +62,18 @@ function verifieEmail($email)
 }
 
 $email = isset($_POST["email"]) ? $_POST["email"] : null;
-$to    = "info@wattago.com"; // ENTER YOUR EMAIL ADDRESS
+$type = isset($_POST["type"]) ? $_POST["type"] : null;
+$to    = "sacha.pignot@gmail.com"; // ENTER YOUR EMAIL ADDRESS
 
 if (isset($email)) :
     // Envoyer un email
-    $email_subject = "Nouvelle adresse email enregistrée - $email"; // ENTER YOUR EMAIL SUBJECT
+    $email_subject = "Nouvelle adresse email enregistrée - $email : $type"; // ENTER YOUR EMAIL SUBJECT
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
     $headers .= "From: <" . $email . ">\r\n" . "Reply-To: " . $email . "\r\n";
-    $msg     = "Email: $email";
+    $msg     = "Email: $email<br>Type: $type";
     mail($to, $email_subject, $msg, $headers);
 
     // Enregistrer l'email dans la BDD
-    ajouterEmail($email);
+    ajouterEmail($email, $type);
 endif;

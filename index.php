@@ -1,19 +1,9 @@
 <!DOCTYPE html>
-<!-- NextApp - App Landing Page Template design by DSAThemes (http://www.dsathemes.com) -->
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
-
-
+<html lang="fr">
 
 <head>
 
-
-
 	<meta charset="utf-8">
-	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
 	<meta name="author" content="DSAThemes" />
 	<meta name="description" content="Wattago &ndash; La première application qui fournit les vraies solutions" />
 	<meta name="keywords" content="Responsive, HTML5 template, DSAThemes, Mobile, Application, One Page, Landing, Mobile App">
@@ -229,18 +219,72 @@
 					</div>
 				</div>
 
+				<section id="pricing-1" class="bg-lightgrey wide-100 pricing-section division">
+					<div class="container">
+
+						<div class="row">
+							<div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+								<div class="row">
+
+
+									<div class="col-md-6">
+										<div class="wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
+
+											<div class="pricing-plan mb-10">
+												<h5 class="h5-lg">Vous êtes un client ?</h5>
+											</div>
+
+											<div class="client-fournisseur">
+												<form id="newsletter" class="newsletter-form" method="POST" action="index.php#newsletter-2">
+													<input type="radio" form="newsletter" name="type" id="client" value="client" required>
+													<label for="client">Oui</label>
+												</form>
+											</div>
+
+										</div>
+									</div>
+
+
+									<div class="col-md-6">
+										<div class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
+
+											<div class="pricing-plan mb-10">
+												<h5 class="h5-lg">Vous êtes un fournisseur</h5>
+											</div>
+
+											<div class="client-fournisseur">
+												<form id="newsletter" class="newsletter-form" method="POST" action="index.php#newsletter-2">
+													<input type="radio" form="newsletter" name="type" value="fournisseur" id="fournisseur">
+													<label for="fournisseur">Oui</label>
+												</form>
+											</div>
+
+										</div>
+									</div>
+
+								</div> <!-- End row -->
+
+
+							</div>
+						</div> <!-- End row -->
+
+
+					</div> <!-- End container -->
+				</section>
+
+
 
 				<!-- NEWSLETTER FORM -->
 				<?php require_once("php/SingletonPDO.class.php"); ?>
 				<div class="row">
 					<div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
 						<div class="newsletter-txt text-center">
-							<form class="newsletter-form" method="POST" action="index.php#newsletter-2">
+							<form id="newsletter" class="newsletter-form" method="POST" action="index.php#newsletter-2">
 
 								<div class="input-group">
-									<input type="email" class="form-control" name="email" placeholder="Votre adresse email" required id="s-email">
+									<input form="newsletter" type="email" class="form-control" name="email" placeholder="Votre adresse email" required id="s-email">
 									<span class="input-group-btn">
-										<button type="submit" class="btn btn-blue black-hover">S'enregistrer</button>
+										<button form="newsletter" type="submit" class="btn btn-blue black-hover">S'enregistrer</button>
 									</span>
 								</div>
 
