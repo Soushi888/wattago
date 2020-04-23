@@ -102,7 +102,7 @@
 
 							<!-- Text -->
 							<p class="p-md" id="slogan">
-								Pas envie de le faire, pas envie d'attendre
+								Pas le goût de le faire, pas envie d'attendre
 							</p>
 
 						</div>
@@ -231,7 +231,7 @@
 										<div class="wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
 
 											<div class="pricing-plan mb-10">
-												<h5 class="client-fournisseur h5-lg">Vous êtes un client ?</h5>
+												<h5 class="client-fournisseur h5-lg">Vous êtes un client</h5>
 											</div>
 
 											<div class="client-fournisseur">
