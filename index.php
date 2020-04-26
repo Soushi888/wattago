@@ -5,12 +5,12 @@
 
 	<meta charset="utf-8">
 	<meta name="author" content="DSAThemes" />
-	<meta name="description" content="Wattago &ndash; La première application qui fournit les vraies solutions" />
+	<meta name="description" content="Loremgo &ndash; Lorem ipsum dolor sit amet" />
 	<meta name="keywords" content="Responsive, HTML5 template, DSAThemes, Mobile, Application, One Page, Landing, Mobile App">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- SITE TITLE -->
-	<title>Wattago &ndash; La première application qui fournit les vraies solutions</title>
+	<title>Loremgo &ndash; Lorem ipsum dolor sit amet</title>
 
 	<!-- FAVICON AND TOUCH ICONS  -->
 	<link rel="shortcut icon" href="images/Wattago-logo-original.png" type="image/x-icon">
@@ -98,11 +98,11 @@
 						<div class="hero-txt text-center mb-40">
 
 							<!-- Title -->
-							<h3 class="h3-sm">La première application qui fournit les vraies solutions</h3>
+							<h3 class="h3-sm">Lorem ipsum dolor sit amet</h3>
 
 							<!-- Text -->
 							<p class="p-md" id="slogan">
-								Pas le goût de le faire, pas envie d'attendre
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							</p>
 
 						</div>
@@ -150,15 +150,15 @@
 
 									<!-- Plan Price  -->
 									<div class="pricing-plan mb-10">
-										<h5 class="h5-lg">Client</h5>
+										<h5 class="h5-lg">Lorem</h5>
 									</div>
 
 									<!-- Pricing Plan Features  -->
 									<ul class="features">
-										<li>Vous avez une réparation immédiate ?</li>
-										<li>Vous avez un besoin moins urgent ?</li>
-										<li>Repérez tous les fournisseurs<br>en géolocalisation</li>
-										<li>Anticipez votre coût, vos délais et vous avez la solution maintenant: Wattago</li>
+										<li>Lorem ipsum dolor sit amet ?</li>
+										<li>consectetur adipiscing elit ?</li>
+										<li>Ut enim ad minim veniam quis nostrud exercitation ullamco</li>
+										<li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 									</ul>
 
 								</div>
@@ -176,17 +176,16 @@
 
 									<!-- Plan Price  -->
 									<div class="pricing-plan mb-10">
-										<h5 class="h5-lg">Fournisseur</h5>
+										<h5 class="h5-lg">Ipsum</h5>
 
 									</div>
 
 									<!-- Pricing Plan Features  -->
 									<ul class="features">
-										<li>Réduisez vos temps morts, vos déplacements et augmentez vos revenus</li>
-										<li>Des opportunités à proximité</li>
-										<li>Des paiements automatiques</li>
-										<li>Facturation sur l'application</li>
-										<li>Aucune perte de temps, que des jobs</li>
+										<li>Lorem ipsum dolor sit amet ?</li>
+										<li>consectetur adipiscing elit ?</li>
+										<li>Ut enim ad minim veniam quis nostrud exercitation ullamco</li>
+										<li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 									</ul>
 
 								</div>
@@ -215,7 +214,7 @@
 				<!-- SECTION TITLE -->
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1 section-title">
-						<h3 class="h3-lg">Tenez-vous informé sur le lancement de l'application !</h3>
+						<h3 class="h3-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit !</h3>
 					</div>
 				</div>
 
@@ -231,13 +230,13 @@
 										<div class="wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
 
 											<div class="pricing-plan mb-10">
-												<h5 class="client-fournisseur h5-lg">Vous êtes un client</h5>
+												<h5 class="client-fournisseur h5-lg">Lorem ipsum</h5>
 											</div>
 
 											<div class="client-fournisseur">
 												<form id="newsletter" class="newsletter-form" method="POST" action="index.php#newsletter-2">
 													<input type="radio" form="newsletter" name="type" id="client" value="client" required>
-													<label for="client">Oui</label>
+													<label for="client">Yes</label>
 												</form>
 											</div>
 
@@ -249,13 +248,13 @@
 										<div class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
 
 											<div class="pricing-plan mb-10">
-												<h5 class="client-fournisseur h5-lg">Vous êtes un fournisseur</h5>
+												<h5 class="client-fournisseur h5-lg">Lorem ipsum</h5>
 											</div>
 
 											<div class="client-fournisseur">
 												<form id="newsletter" class="newsletter-form" method="POST" action="index.php#newsletter-2">
 													<input type="radio" form="newsletter" name="type" value="fournisseur" id="fournisseur">
-													<label for="fournisseur">Oui</label>
+													<label for="fournisseur">Yes</label>
 												</form>
 											</div>
 
