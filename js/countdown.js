@@ -1,8 +1,8 @@
 // Set the date we're counting down to
 if (window.navigator.appCodeName == "Mozilla") {
-    var countDownDate = new Date("Jun 1, 2020 00:00:00").getTime();
+    var countDownDate = new Date("Jun 1, 2030 00:00:00").getTime();
 } else {
-    var countDownDate = new Date("2020-06-001").getTime();
+    var countDownDate = new Date("2030-06-001").getTime();
 }
 
 // Update the count down every 1 second
